@@ -41,7 +41,7 @@ M4(1:l-1,(N-2)*(p+1)+1:(N-1)*(p+1)) = permute(diffr(end,:,2:l),[3 2 1]);
 
 SSS = [B;DD;M3;M4];
 [mmm,nnn] = size(SSS);
-%Finally! we have to formulate the RHS
+% we have to formulate the RHS
 z = [];
 for i = 1:length(y)
   z = [z y(i)];
